@@ -1,25 +1,24 @@
 // src/routes.js
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Login from './login/login';
 import Inicio from './inicio/inicio';
 import NotFound from './NotFound';
 import Layout from './components/Layout';
 
-const Routes = () => {
+const RoutesConfig = () => {
   return (
-    <Switch>
-      <Route exact path="/" component={Login} />
-      <Route exact path="/inicio">
-        <Layout>
-          <Inicio />
-        </Layout>
-      </Route>
-      <Route path="*">
-        <NotFound />
-      </Route>
-    </Switch>
+    <Routes>
+      {/* Ruta para el login */}
+      <Route path="/" element={<Login />} />
+
+      {/* Ruta para la página de inicio envuelta en Layout */}
+      <Route path="/inicio" element={<Layout><Inicio /></Layout>} />
+
+      {/* Ruta para manejar páginas no encontradas */}
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 
-export default Routes;
+export default RoutesConfig;

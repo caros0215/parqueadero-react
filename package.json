@@ -1,0 +1,24 @@
+{
+  "name": "parqueadero-react",
+  "version": "1.0.0",
+  "description": "In the project directory, you can run:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caros0215/parqueadero-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caros0215/parqueadero-react/issues"
+  },
+  "homepage": "https://github.com/caros0215/parqueadero-react#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "react-bootstrap": "^2.10.8",
+    "react-router-dom": "^6.28.2"
+  }
+}

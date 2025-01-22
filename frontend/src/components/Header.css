@@ -1,0 +1,37 @@
+/* Header.css */
+.main-header {
+  transition: margin-left 0.3s;
+}
+
+/* Content wrapper and Footer CSS adjustments */
+.content-wrapper {
+  padding: 15px;
+  margin-top: -2%;
+}
+
+.footer {
+  padding: 10px;
+}
+
+.main-header .navbar-nav .nav-item {
+  margin-top: 8%;
+  font-size: 20px;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  margin-left: 2%;
+}
+@media (min-width: 768px) {
+  body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .content-wrapper,
+  body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-footer,
+  body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-header {
+    transition: margin-left .3s ease-in-out;
+    margin-left: -28px;
+    padding-bottom: 33.5px;
+    background-color: #000000;
+    border-bottom: 2px solid #e3aa00;
+  }
+
+  
+}

@@ -1,0 +1,157 @@
+/* Aside.css */
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+.main-sidebar {
+  transition: width 0.3s;
+  padding-top: 0;
+  width: 222px;
+  z-index: 810; /* Ajusta el z-index aquí */
+  display: flex;
+  flex-direction: column;
+  height: 100vh !important;
+  border-right: 2px solid #e3aa00 !important;
+}
+
+.nav-link {
+  color: #fff;
+  background-color: #333;
+}
+
+.brand-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  min-height: 75px;
+  border-bottom: 2px solid #e3aa00 !important;
+  background-color: #000000;
+}
+
+.nav-icon {
+  color: #e3aa00;
+  text-align: left;
+  margin-left: 2%;
+}
+
+.brand-link .image {
+  max-width: 84%;
+  height: auto;
+  transition: all 0.3s;
+}
+
+.logo-closed {
+  margin-bottom: 0%;
+  margin-top: -4% !important;
+  max-width: 112%;
+}
+
+.brand-link .brand-image {
+  float: left;
+  line-height: .8;
+  margin-left: .8rem;
+  margin-right: .5rem;
+  margin-top: -3px;
+  max-height: 69px;
+  width: auto;
+}
+
+.brand-image .logo-open {
+  max-height: 33px;
+  width: auto;
+}
+
+.sidebar-closed {
+  width: 52px;
+}
+
+.sidebar-closed .brand-link .image {
+  max-width: 50px;
+}
+
+.sidebar {
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: #000000;
+}
+
+.nav-sidebar {
+  padding-top: 0rem;
+}
+
+.nav-sidebar .nav-item {
+  width: 100%;
+  position: relative;
+}
+
+.nav-sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  color: #b8c7ce;
+  transition: all 0.3s ease;
+}
+
+.nav-sidebar .nav-link i {
+  width: 2rem;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+
+.nav-sidebar .nav-link p {
+  margin-bottom: 0;
+  font-family: 'Anton';
+  font-size: 14px;
+}
+
+/* Estilos para el menú cerrado */
+.sidebar-closed .nav-sidebar .nav-item {
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar-closed .nav-sidebar .nav-link {
+  justify-content: center;
+  padding: 0.5rem 0;
+  width: 52px;
+}
+
+.sidebar-closed .nav-sidebar .nav-link i {
+  margin-right: 0;
+}
+
+.sidebar-closed .nav-sidebar .nav-link p {
+  display: none;
+}
+
+/* Nuevos estilos para el hover en modo cerrado */
+.sidebar-closed .nav-sidebar .nav-item:hover {
+  z-index: 9999; /* Asegura que el ítem en hover quede por encima del sidebar */
+  position: relative;
+}
+
+.sidebar-closed .nav-sidebar .nav-item:hover .nav-link {
+  width: 222px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #1e282c;
+  justify-content: flex-start;
+  padding: 0.5rem 1rem;
+}
+
+.sidebar-closed .nav-sidebar .nav-item:hover .nav-link p {
+  display: inline;
+  margin-left: 0.5rem;
+}
+
+/* Ajuste para el ítem activo */
+.nav-sidebar .nav-item.active .nav-link,
+.nav-sidebar .nav-item:hover .nav-link {
+  background-color: #1e282c;
+  color: #ffffff;
+}
+
+/* Navbar ajuste */
+.navbar {
+  border-radius: 0;
+}
